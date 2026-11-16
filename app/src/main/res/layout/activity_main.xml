@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planer treningów"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/imgSportowiec"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sportowiec"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnLosuj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOSUJ ĆWICZENIE"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/imgCwiczenie"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cwiczenie0"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/txtNazwaCwiczenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Losuj ćwiczenie"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="−"/>
+
+        <TextView
+            android:id="@+id/txtLicznikSerii"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnNastepne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NASTĘPNE ĆWICZENIE"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESET"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLacznaLiczbaSerii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Łączna liczba serii: 0"
+        android:textSize="18sp"/>
+
+</LinearLayout>
